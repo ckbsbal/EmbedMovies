@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Search</h1>
+        <div id="searchContainer">
+            <input type="text" id="searchBar" placeholder="Search for a movie...">
+            <span id="searchIcon">🔍</span>
+        </div>
+    </header>
+    <section id="movieResults"></section>
+    <section id="movieStream" style="display: none;">
+        <button id="backButton">Back</button>
+        <div id="movieContainer"></div>
+    </section>
+    <div id="loader" style="display: none;">Loading...</div>
+    <script src="script.js"></script>
+</body>
+</html>

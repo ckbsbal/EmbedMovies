@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+#searchContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 1em;
+    box-sizing: border-box;
+}
+
+#searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#movieResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.movieCard {
+    background-color: #222;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 200px;
+    cursor: pointer;
+}
+
+.movieCard img {
+    width: 100%;
+}
+
+#movieStream {
+    background-color: #222;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 2em 0;
+}
+
+#movieContainer iframe {
+    width: 100%;
+    height: 
+    500px;
+}
+
+#backButton {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+}
+
+/* CSS to hide common ad containers */
+iframe[src*="ads"],
+iframe[src*="ad"],
+div[class*="ads"],
+div[id*="ads"] {
+    display: none !important;
+}
